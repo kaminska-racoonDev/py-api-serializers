@@ -20,8 +20,6 @@ from cinema.serializers import (
 )
 from rest_framework import viewsets
 
-# write views here
-
 
 class CinemaHallViewSet(viewsets.ModelViewSet):
     queryset = CinemaHall.objects.all()
@@ -40,7 +38,6 @@ class ActorViewSet(viewsets.ModelViewSet):
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movie.objects.all()
-    # serializer_class = MovieSerializer
 
     def get_serializer_class(self):
         if self.action == "list":
@@ -50,7 +47,6 @@ class MovieViewSet(viewsets.ModelViewSet):
 
 class MovieSessionViewSet(viewsets.ModelViewSet):
     queryset = MovieSession.objects.all()
-    # serializer_class = MovieSessionSerializer
 
     def get_serializer_class(self):
         if self.action == "list":

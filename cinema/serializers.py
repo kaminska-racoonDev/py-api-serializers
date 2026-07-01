@@ -1,3 +1,13 @@
+from rest_framework import serializers
+from .models import (
+    CinemaHall,
+    Genre,
+    Actor,
+    Movie,
+    MovieSession,
+    Order,
+    Ticket
+)
 # write serializers here
 from rest_framework import serializers
 from cinema.models import (

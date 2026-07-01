@@ -8,17 +8,6 @@ from .models import (
     Order,
     Ticket
 )
-# write serializers here
-from rest_framework import serializers
-from cinema.models import (
-    Actor,
-    Movie,
-    MovieSession,
-    CinemaHall,
-    Genre,
-    Ticket,
-    Order
-)
 
 
 class ActorSerializer(serializers.ModelSerializer):
